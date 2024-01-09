@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Add a popstate event listener for back and forward navigation
 window.addEventListener('popstate', (event) => {
-    const url = event.state ? event.state.url : '404.html';
-    loadProject(url);
+    // Always navigate to the root path when the back button is pressed
+    loadProject('/');
 });
 
 async function loadProject(url) {
@@ -56,7 +56,6 @@ async function loadProject(url) {
         // Handle error loading project
     }
 }
-history.replaceState({ url: window.location.pathname }, '', window.location.pathname);
 
-// const sidebar = createSidebar();
-// document.body.appendChild(sidebar);
+// Initialize the page with the current URL
+loadProject(window.location.pathname);
