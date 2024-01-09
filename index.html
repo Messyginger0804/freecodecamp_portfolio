@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Include the Tailwind CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./js/sidebar.js" defer type="module"></script>
+    <script src="./js/main.js" defer type="module"></script>
+</head>
+<body>
+    <div class="home min-h-100vh">
+
+        
+        <header class="flex justify-end items-center p-4">
+        <!-- Social Icons -->
+        <a href="#" class="text-white mx-2">LinkedIn<i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white mx-2">Github<i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2">Blog<i class="fab fa-linkedin"></i></a>
+        <!-- Add more social icons as needed -->
+    </header>
+
+    <section class="home mt-10 bg-[#1b1b32]">
+        <div class="mx-auto bg-gradient-to-b from-gray-500 rounded-full w-80 h-80 relative overflow-hidden md:h-96 md:w-96">
+            <img src="./jc.png" alt="Profile" class="object-cover w-full h-full">
+        </div>
+        <!-- <script>
+            createSidebar();
+        </script> -->
+        
+        
+        <div class="mx-auto max-w-2xl my-6">
+            <p class="text-medium md:text-lg tracking-widest leading-loose roboto text-white mb-4">
+                Greetings! I'm Jeremy Ashley, and this is my showcase for the FreeCodeCamp Responsive Web Design course projects. Each project represents a step in my learning journey, and I'm excited to share them with you. I truly value the courses provided by FreeCodeCamp for their educational content. If you're interested in connecting, feel free to reach out to me on <a href="#">LinkedIn!</a>
+            </p>
+        </div>
+    </section>
+    <footer class="footer bg-gray-800/90 text-white text-center relative bottom-0 w-full">
+        <!-- ... rest of your footer content ... -->
+    
+        <div class="w-full mt-6 md:mt-10 relative font-medium border-t border-solid border-light py-4 px-8 flex flex-col md:flex-row items-center justify-between">
+            
+            <span>© 2023 JC Software. All rights reserved. 😜</span>
+            
+            <div>
+                Made with &hearts; by <a href="/portfolio" class="underline hover:font-bold">JC Ashley</a>
+            </div>
+            
+        </div>
+        
+    </footer>
+</div>
+    
+</body>
+</html>
