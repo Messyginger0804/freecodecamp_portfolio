@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="nav">
+        <nav id="nav-bar">
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#braylee-profile" class="nav-link">Features</a>
+            <a href="#order-section" class="nav-link">Features</a>
+        </nav>
+    </div>
+        <h1>Braylees Unicorn Soaps!</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nLtzWHTyaCxIh-iCocbuHAEPHvc3ZFKcSA&usqp=CAU" alt="Logo" id="header-img">
+
+    </header>
+
+    <section id="products">
+        <div class="product-item">
+            <div class="product-details">
+                <div class="product-label">
+                    <p class="product-label">Unicorn Sunshine</p>
+                    <p class="product-price">$19.99</p>
+                </div>
+                <img src="https://i.etsystatic.com/6458174/r/il/2f27b1/2897959052/il_1080xN.2897959052_1sf7.jpg" alt="Product 1">
+                <p class="product-description">This is a rainbow soap that has a lemon bubble-gum sent with a real unicorn toy inside.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-details">
+                <div class="product-label">
+                    <p class="product-label">Unicorn Galaxy</p>
+                    <p class="product-price">$19.99</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ20gs1F7mNHAIJkTjXnlMdkNudypDYP8FRLQ&usqp=CAU" alt="Product 2">
+                <p class="product-description">This one is our bedtime soap. It has a soothing of lemon bubble-gum and a unicorn toy. This soap has soothing chemicals in it to make you sleepy.</p>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-details">
+                <div class="product-label">
+
+                    <p class="product-label">Justin Unicorn</p>
+                    <p class="product-price">$9.99</p>
+                </div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMMMD5g9hF0C5qVBtfcXUTfjX3wUs3icHygQ&usqp=CAU" alt="Product 3">
+                <p class="product-description">This is our simple modle. This one is just soap no toy but the same wonderful magical sent.</p>
+            </div>
+        </div>
+</div>
+
+
+    </section>
+    <section id="braylee-profile">
+        <img src="public/Braylee.jpg" alt="Braylee Ashley">
+        <div>
+        <h2>Meet Braylee Ashley</h2>
+        <p>With an innate creativity that goes beyond her years, Braylee handcrafts these amazing soaps, infusing each product with a touch of magic. Her love for unicorns is evident in every soap, making them a whimsical and enchanting addition to your daily routine.</p>
+        </div>
+        </section>
+
+        <section id="order-section">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <h2>Order Your Unicorn Soaps</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+        
+                <input type="submit" id="submit" value="Order Now">
+            </form>
+            <div>
+                <p>Have a look at our product in action:</p>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+    <script src="script.js"></script>
+</body>
+</html>
