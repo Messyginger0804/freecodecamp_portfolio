@@ -1,11 +1,11 @@
 export const projectLinks = [
-    {
-        id: 0,
-        name: "Home",
-        link: '/',
-        componentPath: "./projects/home.html",
-        description: "Welcome to my portfolio! Explore my projects and learn more about my journey in web development."
-    },
+    // {
+    //     id: 0,
+    //     name: "Home",
+    //     link: '/index.html',
+    //     componentPath: ".././index.html",
+    //     description: "Welcome to my portfolio! Explore my projects and learn more about my journey in web development."
+    // },
     {
         id: 1,
         name: "Cat Photo App",

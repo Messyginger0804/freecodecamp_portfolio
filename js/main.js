@@ -56,6 +56,7 @@ async function loadProject(url) {
         // Handle error loading project
     }
 }
+history.replaceState({ url: window.location.pathname }, '', window.location.pathname);
 
 // const sidebar = createSidebar();
 // document.body.appendChild(sidebar);
