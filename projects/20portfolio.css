@@ -1,0 +1,219 @@
+/* General styles for all screens */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+#navbar {
+    border: 3px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center vertically */
+    width: fit-content;
+    text-align: center;
+    border-radius: 15px;
+    position: fixed;
+    background-color: rgb(49, 47, 47);
+    color: #ddd;
+    z-index: 50;
+    padding: 10px;
+    opacity: .9;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 50;
+
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#navbar a:hover {
+    color: #61dafb;
+    /* Change to your preferred hover color */
+}
+
+/* Welcome section styles */
+#welcome-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #61dafb;
+    color: white;
+}
+
+/* Profile image */
+#welcome-section div {
+    background-color: antiquewhite;
+    border-radius: 50%;
+    width: fit-content;
+    margin: auto;
+    overflow: hidden;
+    height: 15rem;
+    width: 15rem;
+}
+
+img {
+    width: 100%;
+    /* Ensure the image takes up the full width of the container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#welcome-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#welcome-section p {
+    font-size: large;
+    margin-left: 15%;
+    margin-right: 15%;
+    letter-spacing: 1px;
+    font-style: monospace;
+}
+
+/* Projects section styles */
+#projects {
+    padding: 40px;
+}
+
+.project-tile {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-tile div {
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically on smaller screens */
+    gap: 1rem;
+}
+
+.project-tile h3 {
+    color: #61dafb;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #61dafb;
+}
+
+.project-tile a:hover {
+    text-decoration: underline;
+}
+
+/* Profile link styles */
+#profile-link a {
+    text-decoration: none;
+    color: #61dafb;
+}
+
+#profile-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #61dafb;
+    text-align: center;
+    padding: 80px 20px 20px 20px;
+    color: white;
+}
+
+#link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Media Queries for Tablets */
+@media only screen and (max-width: 768px) {
+    #navbar {
+        /* left: 50%; */
+    }
+
+    */ #welcome-section p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .project-tile div {
+        align-items: flex-start;
+        /* Align project details to the left on smaller screens */
+    }
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 480px) {
+
+    #navbar {
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
+        display: flex;
+    }
+
+    #navbar ul {
+        padding: 10px;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    #navbar a {
+        font-size: 0.8em;
+        /* Decrease font size for smaller screens */
+    }
+
+    #welcome-section h1 {
+        font-size: 2em;
+        /* Decrease font size for smaller screens */
+    }
+
+    #welcome-section p {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .project-tile div {
+        align-items: flex-start;
+        /* Align project details to the left on smaller screens */
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 0.5em;
+    }
+}
