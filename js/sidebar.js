@@ -1,13 +1,8 @@
 import { projectLinks } from "./project.js";
 
-// sidebar.js
-// (function () {
-//     const sidebar = createSidebar();
-//     document.body.appendChild(sidebar);
-// })();
 export default function createSidebar() {
     const sidebar = document.createElement('div');
-    sidebar.className = 'sidebar fixed top-0 left-0 h-full overflow-y-scroll bg-blue-800/90 text-white w-1/4 px-12 pt-10 pb-24 overflow-y-auto z-[999]';
+    sidebar.className = 'sidebar fixed top-0 right-0 h-full overflow-y-scroll bg-blue-800/90 text-white w-1/4 px-12 pt-10 pb-24 overflow-y-auto z-[999]';
 
     // ... (existing code)
 
@@ -15,7 +10,7 @@ export default function createSidebar() {
 
     projects.map((project) => {
         const listItem = document.createElement('div');
-        listItem.className = 'mb-2 bg-gray-200 text-gray-800 w-full cursor-pointer rounded-md transition duration-300 hover:bg-gray-300 project-link';
+        listItem.className = 'mb-2 bg-gray-200 text-gray-900 w-full cursor-pointer rounded-md transition duration-300 hover:bg-gray-300 project-link';
         listItem.dataset.path = project.link;
 
         const innerDiv = document.createElement('div');
@@ -36,6 +31,6 @@ export default function createSidebar() {
 
     // ... (existing code)
 
-    return sidebar;
     document.body.appendChild(sidebar);
+    return sidebar;
 }
