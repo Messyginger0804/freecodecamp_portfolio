@@ -18,12 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('popstate', (event) => {
     // Always navigate to the root path when the back button is pressed
     loadProject('/');
+
+    window.location.reload();
 });
 
 async function loadProject(url) {
     try {
         // Load HTML content
-        const htmlResponse = await fetch(`./projects${url}.html`); // Add a dot before and after the URL
+        const htmlResponse = await fetch(`./projects${url}.html`);
 
         if (!htmlResponse.ok) {
             throw new Error(`Error loading HTML content from ${url}`);
@@ -57,5 +59,4 @@ async function loadProject(url) {
     }
 }
 
-// Initialize the page with the current URL
 loadProject(window.location.pathname);

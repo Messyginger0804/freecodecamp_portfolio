@@ -4,9 +4,7 @@ export default function createSidebar() {
     const sidebar = document.createElement('div');
     sidebar.className = 'sidebar fixed top-0 right-0 h-full overflow-y-scroll bg-blue-800/90 text-white w-1/4 px-12 pt-10 pb-24 overflow-y-auto z-[999]';
 
-    // ... (existing code)
-
-    const projects = projectLinks; // Assuming you have the array defined
+    const projects = projectLinks;
 
     projects.map((project) => {
         const listItem = document.createElement('div');
