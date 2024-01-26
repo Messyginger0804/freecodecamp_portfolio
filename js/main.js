@@ -51,11 +51,11 @@ async function loadProject(url) {
             document.head.appendChild(styleElement);
         }
 
+
         // Update the address bar
         history.pushState({ url }, '', url);
     } catch (error) {
         console.error(error);
-        // Handle error loading project
     }
 }
 
